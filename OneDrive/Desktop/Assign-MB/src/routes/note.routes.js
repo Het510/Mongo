@@ -13,4 +13,8 @@ router.get("/:id", noteController.getNoteById);
 
 router.patch("/:id", noteController.updateNote);
 
+router.put("/:id", noteController.replaceNote);
+
+router.delete("/:id", noteController.deleteNote);
+
 module.exports = router;
