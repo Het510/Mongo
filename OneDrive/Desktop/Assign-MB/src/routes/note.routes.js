@@ -15,6 +15,7 @@ router.patch("/:id", noteController.updateNote);
 
 router.put("/:id", noteController.replaceNote);
 
+router.delete("/bulk", noteController.deleteNotesBulk);
 router.delete("/:id", noteController.deleteNote);
 
 module.exports = router;
